@@ -18,7 +18,7 @@ const PROJECTION_CONFIG = {
 };
 
 const RAIO_MIN = 5;
-const RAIO_MAX = 16;
+const RAIO_MAX = 22;
 
 export default function MapaConesul({ pontos }) {
   const [geoData, setGeoData] = useState(null);
@@ -48,15 +48,25 @@ export default function MapaConesul({ pontos }) {
     };
   }, []);
 
-  // Tamanho da bolinha proporcional ao nº de adolescentes daquela cidade
-  // (escala em raiz quadrada, pra diferença de área ficar visualmente correta).
-  const maiorAdolescentes = useMemo(
-    () => Math.max(1, ...pontos.map((p) => p.adolescentes || 0)),
-    [pontos]
-  );
+  // Tamanho da bolinha proporcional ao nº de adolescentes daquela cidade.
+  // A escala usa o menor e o maior valor cadastrados como referência (não
+  // sempre a partir de zero), e mantém a relação de área via raiz quadrada
+  // — assim cidades bem diferentes ficam visualmente bem diferentes.
+  const { menorAdolescentes, maiorAdolescentes } = useMemo(() => {
+    const valores = pontos.map((p) => Math.max(p.adolescentes || 0, 1));
+    return {
+      menorAdolescentes: valores.length ? Math.min(...valores) : 1,
+      maiorAdolescentes: valores.length ? Math.max(...valores) : 1,
+    };
+  }, [pontos]);
+
   function raioDoPonto(p) {
-    const t = (p.adolescentes || 0) / maiorAdolescentes;
-    return RAIO_MIN + Math.sqrt(t) * (RAIO_MAX - RAIO_MIN);
+    const valor = Math.max(p.adolescentes || 0, 1);
+    if (maiorAdolescentes === menorAdolescentes) return (RAIO_MIN + RAIO_MAX) / 2;
+    const sqrtMin = Math.sqrt(menorAdolescentes);
+    const sqrtMax = Math.sqrt(maiorAdolescentes);
+    const t = (Math.sqrt(valor) - sqrtMin) / (sqrtMax - sqrtMin);
+    return RAIO_MIN + t * (RAIO_MAX - RAIO_MIN);
   }
 
   function zoomIn() {
