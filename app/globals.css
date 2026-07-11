@@ -79,7 +79,24 @@ button:disabled{ opacity:.6; cursor:default; }
 .mapSection{ margin-bottom: 24px; }
 .mapaMensagem{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:24px; text-align:center; color:var(--muted); font-size:14px; }
 .mapaErro{ color:#C24A3F; }
-.estadosResumo{ display:grid; grid-template-columns: repeat(4,1fr); gap:10px; margin-top:12px; }
+.mapaWrap{ position:relative; background:#fff; border:1px solid var(--line); border-radius:16px; padding:12px; }
+.mapaControles{ position:absolute; top:20px; right:20px; z-index:2; display:flex; flex-direction:column; gap:6px; }
+.mapaControles button{
+  width:auto; margin:0; padding:6px 10px; font-size:13px; font-weight:700;
+  border:1px solid var(--line); border-radius:8px; background:#fff; color:var(--ink); cursor:pointer;
+}
+.mapaControles button:hover{ border-color:var(--teal); }
+.mapaTooltip{
+  position:absolute; top:20px; left:20px; z-index:2; background:#fff; border:1px solid var(--line);
+  border-radius:12px; padding:10px 14px; box-shadow: 0 8px 20px -8px rgba(20,20,60,.2); max-width: 220px;
+}
+.mapaTooltipFechar{
+  position:absolute; top:2px; right:6px; width:auto; margin:0; padding:0; background:none; border:none;
+  font-size:16px; line-height:1; color:var(--muted); cursor:pointer;
+}
+.mapaTooltipCidade{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:14px; padding-right:14px; }
+.mapaTooltipNumeros{ font-size:12px; color:var(--muted); margin-top:2px; }
+.estadosResumo{ display:grid; grid-template-columns: repeat(5,1fr); gap:10px; margin-top:12px; }
 .estadoCard{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px 14px; }
 .estadoUf{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:15px; color:var(--teal-dark); }
 .estadoNome{ font-size:11px; color:var(--muted); margin-bottom:6px; }
