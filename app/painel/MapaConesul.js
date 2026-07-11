@@ -65,6 +65,16 @@ export default function MapaConesul({ pontos }) {
     setPosicao({ coordinates: PROJECTION_CONFIG.center, zoom: 1 });
   }
 
+  // Memoizado: só recalcula quando o GeoJSON é carregado, não a cada
+  // movimento de zoom/pan (senão o mapa "some" no meio do gesto).
+  const geoFiltrado = useMemo(() => {
+    if (!geoData) return null;
+    return {
+      type: "FeatureCollection",
+      features: geoData.features.filter((f) => ESTADOS_MAPA.includes(f.properties.sigla)),
+    };
+  }, [geoData]);
+
   if (erro) {
     return (
       <div className="mapaMensagem mapaErro">
@@ -77,10 +87,6 @@ export default function MapaConesul({ pontos }) {
   if (!geoData) {
     return <div className="mapaMensagem">Carregando mapa...</div>;
   }
-
-  const featuresFiltradas = geoData.features.filter((f) =>
-    ESTADOS_MAPA.includes(f.properties.sigla)
-  );
 
   return (
     <div className="mapaWrap">
@@ -115,7 +121,7 @@ export default function MapaConesul({ pontos }) {
           minZoom={1}
           maxZoom={8}
         >
-          <Geographies geography={{ type: "FeatureCollection", features: featuresFiltradas }}>
+          <Geographies geography={geoFiltrado}>
             {({ geographies }) =>
               geographies.map((geo) => (
                 <Geography
