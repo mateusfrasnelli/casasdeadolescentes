@@ -1,11 +1,11 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps";
 
 // GeoJSON público com os estados do Brasil (properties.sigla = UF).
-// Carregado direto pelo navegador — não precisa estar no projeto.
 const GEO_URL =
-  "https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/brazil-states.geojson";
+  "https://raw.githubusercontent.com/codeforgermany/click_that_hood/main/public/data/brazil-states.geojson";
 
 const ESTADOS_CONESUL = ["RS", "SC", "PR", "MS"];
 
@@ -16,6 +16,44 @@ const PROJECTION_CONFIG = {
 };
 
 export default function MapaConesul({ pontos }) {
+  const [geoData, setGeoData] = useState(null);
+  const [erro, setErro] = useState(null);
+
+  useEffect(() => {
+    let cancelado = false;
+    fetch(GEO_URL)
+      .then((res) => {
+        if (!res.ok) throw new Error(`Falha ao buscar o mapa (status ${res.status})`);
+        return res.json();
+      })
+      .then((data) => {
+        if (!cancelado) setGeoData(data);
+      })
+      .catch((err) => {
+        if (!cancelado) setErro(err.message || "Não foi possível carregar o mapa.");
+      });
+    return () => {
+      cancelado = true;
+    };
+  }, []);
+
+  if (erro) {
+    return (
+      <div className="mapaMensagem mapaErro">
+        Não consegui carregar o contorno do mapa agora ({erro}). A lista de casas
+        abaixo continua funcionando normalmente.
+      </div>
+    );
+  }
+
+  if (!geoData) {
+    return <div className="mapaMensagem">Carregando mapa...</div>;
+  }
+
+  const featuresFiltradas = geoData.features.filter((f) =>
+    ESTADOS_CONESUL.includes(f.properties.sigla)
+  );
+
   return (
     <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 16, padding: 12 }}>
       <ComposableMap
@@ -25,21 +63,19 @@ export default function MapaConesul({ pontos }) {
         height={620}
         style={{ width: "100%", height: "auto" }}
       >
-        <Geographies geography={GEO_URL}>
+        <Geographies geography={{ type: "FeatureCollection", features: featuresFiltradas }}>
           {({ geographies }) =>
-            geographies
-              .filter((geo) => ESTADOS_CONESUL.includes(geo.properties.sigla))
-              .map((geo) => (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  style={{
-                    default: { fill: "#EAF6F5", stroke: "#0F7173", strokeWidth: 0.75, outline: "none" },
-                    hover: { fill: "#D9F0EE", stroke: "#0F7173", strokeWidth: 0.75, outline: "none" },
-                    pressed: { fill: "#D9F0EE", stroke: "#0F7173", strokeWidth: 0.75, outline: "none" },
-                  }}
-                />
-              ))
+            geographies.map((geo) => (
+              <Geography
+                key={geo.rsmKey}
+                geography={geo}
+                style={{
+                  default: { fill: "#EAF6F5", stroke: "#0F7173", strokeWidth: 0.75, outline: "none" },
+                  hover: { fill: "#D9F0EE", stroke: "#0F7173", strokeWidth: 0.75, outline: "none" },
+                  pressed: { fill: "#D9F0EE", stroke: "#0F7173", strokeWidth: 0.75, outline: "none" },
+                }}
+              />
+            ))
           }
         </Geographies>
 
