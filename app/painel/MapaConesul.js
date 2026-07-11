@@ -1,23 +1,30 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps";
+import { useEffect, useMemo, useState } from "react";
+import { ComposableMap, Geographies, Geography, Marker, ZoomableGroup } from "react-simple-maps";
 
 // GeoJSON público com os estados do Brasil (properties.sigla = UF).
 const GEO_URL =
   "https://raw.githubusercontent.com/codeforgermany/click_that_hood/main/public/data/brazil-states.geojson";
 
-const ESTADOS_CONESUL = ["RS", "SC", "PR", "MS"];
+const ESTADOS_MAPA = ["RS", "SC", "PR", "MS", "MT"];
 
-// Se o mapa aparecer cortado ou fora do centro, ajuste "center" e "scale" aqui.
+// A região agora inclui o Mato Grosso inteiro, que é bem mais "alto" (norte-sul)
+// que os outros 4 estados. Por isso o mapa ficou num formato mais vertical.
+// Se aparecer cortado ou fora do centro, ajuste "center" e "scale" aqui.
 const PROJECTION_CONFIG = {
-  scale: 1700,
-  center: [-53, -26],
+  scale: 1650,
+  center: [-54.5, -20.5],
 };
+
+const RAIO_MIN = 5;
+const RAIO_MAX = 16;
 
 export default function MapaConesul({ pontos }) {
   const [geoData, setGeoData] = useState(null);
   const [erro, setErro] = useState(null);
+  const [selecionado, setSelecionado] = useState(null);
+  const [posicao, setPosicao] = useState({ coordinates: PROJECTION_CONFIG.center, zoom: 1 });
 
   useEffect(() => {
     let cancelado = false;
@@ -37,6 +44,27 @@ export default function MapaConesul({ pontos }) {
     };
   }, []);
 
+  // Tamanho da bolinha proporcional ao nº de adolescentes daquela cidade
+  // (escala em raiz quadrada, pra diferença de área ficar visualmente correta).
+  const maiorAdolescentes = useMemo(
+    () => Math.max(1, ...pontos.map((p) => p.adolescentes || 0)),
+    [pontos]
+  );
+  function raioDoPonto(p) {
+    const t = (p.adolescentes || 0) / maiorAdolescentes;
+    return RAIO_MIN + Math.sqrt(t) * (RAIO_MAX - RAIO_MIN);
+  }
+
+  function zoomIn() {
+    setPosicao((pos) => ({ ...pos, zoom: Math.min(pos.zoom * 1.5, 8) }));
+  }
+  function zoomOut() {
+    setPosicao((pos) => ({ ...pos, zoom: Math.max(pos.zoom / 1.5, 1) }));
+  }
+  function resetZoom() {
+    setPosicao({ coordinates: PROJECTION_CONFIG.center, zoom: 1 });
+  }
+
   if (erro) {
     return (
       <div className="mapaMensagem mapaErro">
@@ -51,46 +79,71 @@ export default function MapaConesul({ pontos }) {
   }
 
   const featuresFiltradas = geoData.features.filter((f) =>
-    ESTADOS_CONESUL.includes(f.properties.sigla)
+    ESTADOS_MAPA.includes(f.properties.sigla)
   );
 
   return (
-    <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 16, padding: 12 }}>
+    <div className="mapaWrap">
+      <div className="mapaControles">
+        <button type="button" onClick={zoomIn} aria-label="Aproximar">+</button>
+        <button type="button" onClick={zoomOut} aria-label="Afastar">−</button>
+        <button type="button" onClick={resetZoom} aria-label="Redefinir zoom">redefinir</button>
+      </div>
+
+      {selecionado && (
+        <div className="mapaTooltip">
+          <button type="button" className="mapaTooltipFechar" onClick={() => setSelecionado(null)}>×</button>
+          <div className="mapaTooltipCidade">{selecionado.nome} — {selecionado.uf}</div>
+          <div className="mapaTooltipNumeros">
+            {selecionado.casas} casa{selecionado.casas === 1 ? "" : "s"} · {selecionado.adolescentes} adolescente{selecionado.adolescentes === 1 ? "" : "s"}
+          </div>
+        </div>
+      )}
+
       <ComposableMap
         projection="geoMercator"
         projectionConfig={PROJECTION_CONFIG}
-        width={800}
-        height={620}
+        width={760}
+        height={900}
         style={{ width: "100%", height: "auto" }}
       >
-        <Geographies geography={{ type: "FeatureCollection", features: featuresFiltradas }}>
-          {({ geographies }) =>
-            geographies.map((geo) => (
-              <Geography
-                key={geo.rsmKey}
-                geography={geo}
-                style={{
-                  default: { fill: "#EAF6F5", stroke: "#0F7173", strokeWidth: 0.75, outline: "none" },
-                  hover: { fill: "#D9F0EE", stroke: "#0F7173", strokeWidth: 0.75, outline: "none" },
-                  pressed: { fill: "#D9F0EE", stroke: "#0F7173", strokeWidth: 0.75, outline: "none" },
-                }}
-              />
-            ))
-          }
-        </Geographies>
+        <ZoomableGroup
+          center={posicao.coordinates}
+          zoom={posicao.zoom}
+          onMoveEnd={setPosicao}
+          minZoom={1}
+          maxZoom={8}
+        >
+          <Geographies geography={{ type: "FeatureCollection", features: featuresFiltradas }}>
+            {({ geographies }) =>
+              geographies.map((geo) => (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  style={{
+                    default: { fill: "#EAF6F5", stroke: "#0F7173", strokeWidth: 0.5, outline: "none" },
+                    hover: { fill: "#D9F0EE", stroke: "#0F7173", strokeWidth: 0.5, outline: "none" },
+                    pressed: { fill: "#D9F0EE", stroke: "#0F7173", strokeWidth: 0.5, outline: "none" },
+                  }}
+                />
+              ))
+            }
+          </Geographies>
 
-        {pontos.map((p) => (
-          <Marker key={p.chave} coordinates={[p.lng, p.lat]}>
-            <circle r={5} fill="#FF6B5F" stroke="#fff" strokeWidth={1.5} />
-            <text
-              textAnchor="middle"
-              y={-10}
-              style={{ fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 600, fill: "#1C2333" }}
-            >
-              {p.nome}
-            </text>
-          </Marker>
-        ))}
+          {pontos.map((p) => (
+            <Marker key={p.chave} coordinates={[p.lng, p.lat]}>
+              <circle
+                r={raioDoPonto(p) / posicao.zoom}
+                fill={selecionado?.chave === p.chave ? "#0F7173" : "#FF6B5F"}
+                stroke="#fff"
+                strokeWidth={1.5 / posicao.zoom}
+                style={{ cursor: "pointer" }}
+                onClick={() => setSelecionado(p)}
+                onMouseEnter={() => setSelecionado(p)}
+              />
+            </Marker>
+          ))}
+        </ZoomableGroup>
       </ComposableMap>
     </div>
   );
