@@ -116,7 +116,6 @@ export default function MapaConesul({ pontos }) {
         <ZoomableGroup
           center={posicao.coordinates}
           zoom={posicao.zoom}
-          onMove={setPosicao}
           onMoveEnd={setPosicao}
           minZoom={1}
           maxZoom={8}
