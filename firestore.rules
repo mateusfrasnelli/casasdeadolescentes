@@ -1,0 +1,29 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /casas/{docId} {
+
+      // Qualquer pessoa pode cadastrar uma casa, desde que os dados
+      // enviados sigam o formato esperado.
+      allow create: if
+        request.resource.data.keys().hasAll(['cidade', 'quantidade', 'frequencia', 'criadoEm']) &&
+        request.resource.data.cidade is string &&
+        request.resource.data.cidade.size() > 0 &&
+        request.resource.data.cidade.size() < 100 &&
+        request.resource.data.quantidade is number &&
+        request.resource.data.quantidade > 0 &&
+        request.resource.data.frequencia in ['Semanal', 'Quinzenal'];
+
+      // Sem login, não existe como o banco diferenciar "administrador" de
+      // "qualquer pessoa com o link do painel". Por isso leitura e remoção
+      // ficam liberadas para quem tiver o link de /painel.
+      // A única proteção real aqui é não divulgar esse link.
+      allow read, delete: if true;
+
+      // Ninguém edita um registro já existente (só cadastra novo ou apaga).
+      allow update: if false;
+    }
+  }
+}
