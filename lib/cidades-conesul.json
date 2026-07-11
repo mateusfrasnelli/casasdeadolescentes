@@ -24,6 +24,12 @@
     "lng": -54.1615
   },
   {
+    "nome": "Acorizal",
+    "uf": "MT",
+    "lat": -15.194,
+    "lng": -56.3632
+  },
+  {
     "nome": "Adrianópolis",
     "uf": "PR",
     "lat": -24.6606,
@@ -40,6 +46,12 @@
     "uf": "SC",
     "lat": -27.2662,
     "lng": -49.708
+  },
+  {
+    "nome": "Água Boa",
+    "uf": "MT",
+    "lat": -14.051,
+    "lng": -52.1601
   },
   {
     "nome": "Água Clara",
@@ -144,6 +156,12 @@
     "lng": -53.0341
   },
   {
+    "nome": "Alta Floresta",
+    "uf": "MT",
+    "lat": -9.86674,
+    "lng": -56.0867
+  },
+  {
     "nome": "Altamira do Paraná",
     "uf": "PR",
     "lat": -24.7983,
@@ -156,16 +174,40 @@
     "lng": -52.9893
   },
   {
+    "nome": "Alto Araguaia",
+    "uf": "MT",
+    "lat": -17.3153,
+    "lng": -53.2181
+  },
+  {
     "nome": "Alto Bela Vista",
     "uf": "SC",
     "lat": -27.4333,
     "lng": -51.9044
   },
   {
+    "nome": "Alto Boa Vista",
+    "uf": "MT",
+    "lat": -11.6732,
+    "lng": -51.3883
+  },
+  {
     "nome": "Alto Feliz",
     "uf": "RS",
     "lat": -29.3919,
     "lng": -51.3123
+  },
+  {
+    "nome": "Alto Garças",
+    "uf": "MT",
+    "lat": -16.9462,
+    "lng": -53.5272
+  },
+  {
+    "nome": "Alto Paraguai",
+    "uf": "MT",
+    "lat": -14.5137,
+    "lng": -56.4776
   },
   {
     "nome": "Alto Paraíso",
@@ -184,6 +226,12 @@
     "uf": "PR",
     "lat": -24.0224,
     "lng": -53.44
+  },
+  {
+    "nome": "Alto Taquari",
+    "uf": "MT",
+    "lat": -17.8241,
+    "lng": -53.2792
   },
   {
     "nome": "Altônia",
@@ -342,6 +390,12 @@
     "lng": -51.0961
   },
   {
+    "nome": "Apiacás",
+    "uf": "MT",
+    "lat": -9.53981,
+    "lng": -57.4587
+  },
+  {
     "nome": "Apiúna",
     "uf": "SC",
     "lat": -27.0375,
@@ -364,6 +418,18 @@
     "uf": "SC",
     "lat": -27.1587,
     "lng": -52.1423
+  },
+  {
+    "nome": "Araguaiana",
+    "uf": "MT",
+    "lat": -15.7291,
+    "lng": -51.8341
+  },
+  {
+    "nome": "Araguainha",
+    "uf": "MT",
+    "lat": -16.857,
+    "lng": -53.0318
   },
   {
     "nome": "Aral Moreira",
@@ -394,6 +460,12 @@
     "uf": "PR",
     "lat": -24.3132,
     "lng": -51.7856
+  },
+  {
+    "nome": "Araputanga",
+    "uf": "MT",
+    "lat": -15.4641,
+    "lng": -58.3425
   },
   {
     "nome": "Araquari",
@@ -430,6 +502,18 @@
     "uf": "PR",
     "lat": -25.5859,
     "lng": -49.4047
+  },
+  {
+    "nome": "Arenápolis",
+    "uf": "MT",
+    "lat": -14.4472,
+    "lng": -56.8437
+  },
+  {
+    "nome": "Aripuanã",
+    "uf": "MT",
+    "lat": -10.1723,
+    "lng": -59.4568
   },
   {
     "nome": "Ariranha do Ivaí",
@@ -636,6 +720,12 @@
     "lng": -52.3798
   },
   {
+    "nome": "Barão de Melgaço",
+    "uf": "MT",
+    "lat": -16.2067,
+    "lng": -55.9623
+  },
+  {
     "nome": "Barão do Triunfo",
     "uf": "RS",
     "lat": -30.3891,
@@ -652,6 +742,18 @@
     "uf": "SC",
     "lat": -26.654,
     "lng": -53.44
+  },
+  {
+    "nome": "Barra do Bugres",
+    "uf": "MT",
+    "lat": -15.0702,
+    "lng": -57.1878
+  },
+  {
+    "nome": "Barra do Garças",
+    "uf": "MT",
+    "lat": -15.8804,
+    "lng": -52.264
   },
   {
     "nome": "Barra do Guarita",
@@ -882,6 +984,12 @@
     "lng": -50.4295
   },
   {
+    "nome": "Bom Jesus do Araguaia",
+    "uf": "MT",
+    "lat": -12.1706,
+    "lng": -51.5032
+  },
+  {
     "nome": "Bom Jesus do Oeste",
     "uf": "SC",
     "lat": -26.6927,
@@ -1008,6 +1116,12 @@
     "lng": -53.5275
   },
   {
+    "nome": "Brasnorte",
+    "uf": "MT",
+    "lat": -12.1474,
+    "lng": -57.9833
+  },
+  {
     "nome": "Brochier",
     "uf": "RS",
     "lat": -29.5501,
@@ -1054,6 +1168,12 @@
     "uf": "RS",
     "lat": -29.8883,
     "lng": -54.822
+  },
+  {
+    "nome": "Cáceres",
+    "uf": "MT",
+    "lat": -16.0764,
+    "lng": -57.6818
   },
   {
     "nome": "Cachoeira do Sul",
@@ -1200,6 +1320,12 @@
     "lng": -49.0551
   },
   {
+    "nome": "Campinápolis",
+    "uf": "MT",
+    "lat": -14.5162,
+    "lng": -52.893
+  },
+  {
     "nome": "Campinas do Sul",
     "uf": "RS",
     "lat": -27.7174,
@@ -1272,16 +1398,46 @@
     "lng": -53.8052
   },
   {
+    "nome": "Campo Novo do Parecis",
+    "uf": "MT",
+    "lat": -13.6587,
+    "lng": -57.8907
+  },
+  {
+    "nome": "Campo Verde",
+    "uf": "MT",
+    "lat": -15.545,
+    "lng": -55.1626
+  },
+  {
     "nome": "Campos Borges",
     "uf": "RS",
     "lat": -28.8871,
     "lng": -53.0008
   },
   {
+    "nome": "Campos de Júlio",
+    "uf": "MT",
+    "lat": -13.7242,
+    "lng": -59.2858
+  },
+  {
     "nome": "Campos Novos",
     "uf": "SC",
     "lat": -27.4002,
     "lng": -51.2276
+  },
+  {
+    "nome": "Canabrava do Norte",
+    "uf": "MT",
+    "lat": -11.0556,
+    "lng": -51.8209
+  },
+  {
+    "nome": "Canarana",
+    "uf": "MT",
+    "lat": -13.5515,
+    "lng": -52.2705
   },
   {
     "nome": "Candelária",
@@ -1452,6 +1608,12 @@
     "lng": -52.7933
   },
   {
+    "nome": "Carlinda",
+    "uf": "MT",
+    "lat": -9.94912,
+    "lng": -55.8417
+  },
+  {
     "nome": "Carlópolis",
     "uf": "PR",
     "lat": -23.4269,
@@ -1492,6 +1654,12 @@
     "uf": "MS",
     "lat": -19.1179,
     "lng": -51.7313
+  },
+  {
+    "nome": "Castanheira",
+    "uf": "MT",
+    "lat": -11.1251,
+    "lng": -58.6081
   },
   {
     "nome": "Castro",
@@ -1602,6 +1770,12 @@
     "lng": -53.0665
   },
   {
+    "nome": "Chapada dos Guimarães",
+    "uf": "MT",
+    "lat": -15.4643,
+    "lng": -55.7499
+  },
+  {
     "nome": "Chapadão do Lageado",
     "uf": "SC",
     "lat": -27.5905,
@@ -1680,6 +1854,12 @@
     "lng": -51.8741
   },
   {
+    "nome": "Cláudia",
+    "uf": "MT",
+    "lat": -11.5075,
+    "lng": -54.8835
+  },
+  {
     "nome": "Clevelândia",
     "uf": "PR",
     "lat": -26.4043,
@@ -1692,10 +1872,28 @@
     "lng": -49.3335
   },
   {
+    "nome": "Cocalinho",
+    "uf": "MT",
+    "lat": -14.3903,
+    "lng": -51.0001
+  },
+  {
+    "nome": "Colíder",
+    "uf": "MT",
+    "lat": -10.8135,
+    "lng": -55.461
+  },
+  {
     "nome": "Colinas",
     "uf": "RS",
     "lat": -29.3948,
     "lng": -51.8556
+  },
+  {
+    "nome": "Colniza",
+    "uf": "MT",
+    "lat": -9.46121,
+    "lng": -59.2252
   },
   {
     "nome": "Colombo",
@@ -1716,6 +1914,12 @@
     "lng": -51.9743
   },
   {
+    "nome": "Comodoro",
+    "uf": "MT",
+    "lat": -13.6614,
+    "lng": -59.7848
+  },
+  {
     "nome": "Concórdia",
     "uf": "SC",
     "lat": -27.2335,
@@ -1728,10 +1932,22 @@
     "lng": -53.4905
   },
   {
+    "nome": "Confresa",
+    "uf": "MT",
+    "lat": -10.6437,
+    "lng": -51.5699
+  },
+  {
     "nome": "Congonhinhas",
     "uf": "PR",
     "lat": -23.5493,
     "lng": -50.5569
+  },
+  {
+    "nome": "Conquista D'Oeste",
+    "uf": "MT",
+    "lat": -14.5381,
+    "lng": -59.5444
   },
   {
     "nome": "Conselheiro Mairinck",
@@ -1872,6 +2088,12 @@
     "lng": -51.6971
   },
   {
+    "nome": "Cotriguaçu",
+    "uf": "MT",
+    "lat": -9.85656,
+    "lng": -58.4192
+  },
+  {
     "nome": "Coxilha",
     "uf": "RS",
     "lat": -28.128,
@@ -1956,6 +2178,12 @@
     "lng": -51.4563
   },
   {
+    "nome": "Cuiabá",
+    "uf": "MT",
+    "lat": -15.601,
+    "lng": -56.0974
+  },
+  {
     "nome": "Cunha Porã",
     "uf": "SC",
     "lat": -26.895,
@@ -1986,10 +2214,22 @@
     "lng": -50.4576
   },
   {
+    "nome": "Curvelândia",
+    "uf": "MT",
+    "lat": -15.6084,
+    "lng": -57.9133
+  },
+  {
     "nome": "David Canabarro",
     "uf": "RS",
     "lat": -28.3849,
     "lng": -51.8482
+  },
+  {
+    "nome": "Denise",
+    "uf": "MT",
+    "lat": -14.7324,
+    "lng": -57.0583
   },
   {
     "nome": "Deodápolis",
@@ -2034,6 +2274,12 @@
     "lng": -52.6768
   },
   {
+    "nome": "Diamantino",
+    "uf": "MT",
+    "lat": -14.4037,
+    "lng": -56.4366
+  },
+  {
     "nome": "Dilermando de Aguiar",
     "uf": "RS",
     "lat": -29.7054,
@@ -2074,6 +2320,12 @@
     "uf": "PR",
     "lat": -25.7407,
     "lng": -53.057
+  },
+  {
+    "nome": "Dom Aquino",
+    "uf": "MT",
+    "lat": -15.8099,
+    "lng": -54.9223
   },
   {
     "nome": "Dom Feliciano",
@@ -2394,6 +2646,12 @@
     "lng": -51.3032
   },
   {
+    "nome": "Feliz Natal",
+    "uf": "MT",
+    "lat": -12.385,
+    "lng": -54.9227
+  },
+  {
     "nome": "Fênix",
     "uf": "PR",
     "lat": -23.9135,
@@ -2416,6 +2674,12 @@
     "uf": "MS",
     "lat": -18.6782,
     "lng": -53.638
+  },
+  {
+    "nome": "Figueirópolis D'Oeste",
+    "uf": "MT",
+    "lat": -15.4439,
+    "lng": -58.7391
   },
   {
     "nome": "Flor da Serra do Sul",
@@ -2592,6 +2856,12 @@
     "lng": -48.9534
   },
   {
+    "nome": "Gaúcha do Norte",
+    "uf": "MT",
+    "lat": -13.2443,
+    "lng": -53.0809
+  },
+  {
     "nome": "Gaurama",
     "uf": "RS",
     "lat": -27.5856,
@@ -2602,6 +2872,12 @@
     "uf": "RS",
     "lat": -29.9032,
     "lng": -51.7612
+  },
+  {
+    "nome": "General Carneiro",
+    "uf": "MT",
+    "lat": -15.7094,
+    "lng": -52.7574
   },
   {
     "nome": "General Carneiro",
@@ -2626,6 +2902,12 @@
     "uf": "RS",
     "lat": -28.0297,
     "lng": -54.3517
+  },
+  {
+    "nome": "Glória D'Oeste",
+    "uf": "MT",
+    "lat": -15.768,
+    "lng": -58.3108
   },
   {
     "nome": "Glória de Dourados",
@@ -2790,6 +3072,12 @@
     "lng": -52.8755
   },
   {
+    "nome": "Guarantã do Norte",
+    "uf": "MT",
+    "lat": -9.96218,
+    "lng": -54.9121
+  },
+  {
     "nome": "Guarapuava",
     "uf": "PR",
     "lat": -25.3902,
@@ -2824,6 +3112,12 @@
     "uf": "MS",
     "lat": -21.4583,
     "lng": -56.1117
+  },
+  {
+    "nome": "Guiratinga",
+    "uf": "MT",
+    "lat": -16.346,
+    "lng": -53.7575
   },
   {
     "nome": "Harmonia",
@@ -3066,6 +3360,12 @@
     "lng": -52.6989
   },
   {
+    "nome": "Indiavaí",
+    "uf": "MT",
+    "lat": -15.4921,
+    "lng": -58.5802
+  },
+  {
     "nome": "Inhacorá",
     "uf": "RS",
     "lat": -27.8752,
@@ -3100,6 +3400,12 @@
     "uf": "PR",
     "lat": -25.0238,
     "lng": -50.5794
+  },
+  {
+    "nome": "Ipiranga do Norte",
+    "uf": "MT",
+    "lat": -12.2408,
+    "lng": -56.1531
   },
   {
     "nome": "Ipiranga do Sul",
@@ -3234,6 +3540,12 @@
     "lng": -51.9912
   },
   {
+    "nome": "Itanhangá",
+    "uf": "MT",
+    "lat": -12.2259,
+    "lng": -56.6463
+  },
+  {
     "nome": "Itapejara d'Oeste",
     "uf": "PR",
     "lat": -25.9619,
@@ -3300,10 +3612,22 @@
     "lng": -52.4538
   },
   {
+    "nome": "Itaúba",
+    "uf": "MT",
+    "lat": -11.0614,
+    "lng": -55.2766
+  },
+  {
     "nome": "Itaúna do Sul",
     "uf": "PR",
     "lat": -22.7289,
     "lng": -52.8874
+  },
+  {
+    "nome": "Itiquira",
+    "uf": "MT",
+    "lat": -17.2147,
+    "lng": -54.1422
   },
   {
     "nome": "Ituporanga",
@@ -3378,6 +3702,12 @@
     "lng": -49.9739
   },
   {
+    "nome": "Jaciara",
+    "uf": "MT",
+    "lat": -15.9548,
+    "lng": -54.9733
+  },
+  {
     "nome": "Jacinto Machado",
     "uf": "SC",
     "lat": -28.9961,
@@ -3430,6 +3760,12 @@
     "uf": "PR",
     "lat": -23.6011,
     "lng": -51.6448
+  },
+  {
+    "nome": "Jangada",
+    "uf": "MT",
+    "lat": -15.235,
+    "lng": -56.4917
   },
   {
     "nome": "Janiópolis",
@@ -3516,6 +3852,12 @@
     "lng": -54.3079
   },
   {
+    "nome": "Jauru",
+    "uf": "MT",
+    "lat": -15.3342,
+    "lng": -58.8723
+  },
+  {
     "nome": "Jesuítas",
     "uf": "PR",
     "lat": -24.3839,
@@ -3552,6 +3894,18 @@
     "lng": -49.6286
   },
   {
+    "nome": "Juara",
+    "uf": "MT",
+    "lat": -11.2639,
+    "lng": -57.5244
+  },
+  {
+    "nome": "Juína",
+    "uf": "MT",
+    "lat": -11.3728,
+    "lng": -58.7483
+  },
+  {
     "nome": "Júlio de Castilhos",
     "uf": "RS",
     "lat": -29.2299,
@@ -3574,6 +3928,18 @@
     "uf": "PR",
     "lat": -24.4209,
     "lng": -52.8413
+  },
+  {
+    "nome": "Juruena",
+    "uf": "MT",
+    "lat": -10.3178,
+    "lng": -58.3592
+  },
+  {
+    "nome": "Juscimeira",
+    "uf": "MT",
+    "lat": -16.0633,
+    "lng": -54.8859
   },
   {
     "nome": "Jussara",
@@ -3664,6 +4030,12 @@
     "uf": "SC",
     "lat": -26.8576,
     "lng": -52.5648
+  },
+  {
+    "nome": "Lambari D'Oeste",
+    "uf": "MT",
+    "lat": -15.3188,
+    "lng": -58.0046
   },
   {
     "nome": "Lapa",
@@ -3778,6 +4150,18 @@
     "uf": "SC",
     "lat": -27.1684,
     "lng": -49.535
+  },
+  {
+    "nome": "Lucas do Rio Verde",
+    "uf": "MT",
+    "lat": -13.0588,
+    "lng": -55.9042
+  },
+  {
+    "nome": "Luciara",
+    "uf": "MT",
+    "lat": -11.2219,
+    "lng": -50.6676
   },
   {
     "nome": "Luiz Alves",
@@ -3942,6 +4326,12 @@
     "lng": -53.1737
   },
   {
+    "nome": "Marcelândia",
+    "uf": "MT",
+    "lat": -11.0463,
+    "lng": -54.4377
+  },
+  {
     "nome": "Marcelino Ramos",
     "uf": "RS",
     "lat": -27.4676,
@@ -4098,6 +4488,12 @@
     "lng": -51.1501
   },
   {
+    "nome": "Matupá",
+    "uf": "MT",
+    "lat": -10.1821,
+    "lng": -54.9467
+  },
+  {
     "nome": "Mauá da Serra",
     "uf": "PR",
     "lat": -23.8988,
@@ -4156,6 +4552,12 @@
     "uf": "PR",
     "lat": -22.9657,
     "lng": -51.4846
+  },
+  {
+    "nome": "Mirassol d'Oeste",
+    "uf": "MT",
+    "lat": -15.6759,
+    "lng": -58.0951
   },
   {
     "nome": "Mirim Doce",
@@ -4332,16 +4734,34 @@
     "lng": -55.8296
   },
   {
+    "nome": "Nobres",
+    "uf": "MT",
+    "lat": -14.7192,
+    "lng": -56.3284
+  },
+  {
     "nome": "Nonoai",
     "uf": "RS",
     "lat": -27.3689,
     "lng": -52.7756
   },
   {
+    "nome": "Nortelândia",
+    "uf": "MT",
+    "lat": -14.454,
+    "lng": -56.7945
+  },
+  {
     "nome": "Nossa Senhora das Graças",
     "uf": "PR",
     "lat": -22.9129,
     "lng": -51.7978
+  },
+  {
+    "nome": "Nossa Senhora do Livramento",
+    "uf": "MT",
+    "lat": -15.772,
+    "lng": -56.3432
   },
   {
     "nome": "Nova Aliança do Ivaí",
@@ -4386,6 +4806,12 @@
     "lng": -53.2575
   },
   {
+    "nome": "Nova Bandeirantes",
+    "uf": "MT",
+    "lat": -9.84977,
+    "lng": -57.8139
+  },
+  {
     "nome": "Nova Bassano",
     "uf": "RS",
     "lat": -28.7291,
@@ -4398,10 +4824,22 @@
     "lng": -52.9784
   },
   {
+    "nome": "Nova Brasilândia",
+    "uf": "MT",
+    "lat": -14.9612,
+    "lng": -54.9685
+  },
+  {
     "nome": "Nova Bréscia",
     "uf": "RS",
     "lat": -29.2182,
     "lng": -52.0319
+  },
+  {
+    "nome": "Nova Canaã do Norte",
+    "uf": "MT",
+    "lat": -10.558,
+    "lng": -55.953
   },
   {
     "nome": "Nova Candelária",
@@ -4446,6 +4884,12 @@
     "lng": -50.5665
   },
   {
+    "nome": "Nova Guarita",
+    "uf": "MT",
+    "lat": -10.312,
+    "lng": -55.4061
+  },
+  {
     "nome": "Nova Hartz",
     "uf": "RS",
     "lat": -29.5808,
@@ -4456,6 +4900,12 @@
     "uf": "SC",
     "lat": -26.9428,
     "lng": -52.8141
+  },
+  {
+    "nome": "Nova Lacerda",
+    "uf": "MT",
+    "lat": -14.4727,
+    "lng": -59.6001
   },
   {
     "nome": "Nova Laranjeiras",
@@ -4470,10 +4920,46 @@
     "lng": -52.9868
   },
   {
+    "nome": "Nova Marilândia",
+    "uf": "MT",
+    "lat": -14.3568,
+    "lng": -56.9696
+  },
+  {
+    "nome": "Nova Maringá",
+    "uf": "MT",
+    "lat": -13.0136,
+    "lng": -57.0908
+  },
+  {
+    "nome": "Nova Monte Verde",
+    "uf": "MT",
+    "lat": -9.99998,
+    "lng": -57.5261
+  },
+  {
+    "nome": "Nova Mutum",
+    "uf": "MT",
+    "lat": -13.8374,
+    "lng": -56.0743
+  },
+  {
+    "nome": "Nova Nazaré",
+    "uf": "MT",
+    "lat": -13.9486,
+    "lng": -51.8002
+  },
+  {
     "nome": "Nova Olímpia",
     "uf": "PR",
     "lat": -23.4703,
     "lng": -53.0898
+  },
+  {
+    "nome": "Nova Olímpia",
+    "uf": "MT",
+    "lat": -14.7889,
+    "lng": -57.2886
   },
   {
     "nome": "Nova Pádua",
@@ -4524,6 +5010,12 @@
     "lng": -50.7598
   },
   {
+    "nome": "Nova Santa Helena",
+    "uf": "MT",
+    "lat": -10.8651,
+    "lng": -55.1872
+  },
+  {
     "nome": "Nova Santa Rita",
     "uf": "RS",
     "lat": -29.8525,
@@ -4548,10 +5040,22 @@
     "lng": -48.9298
   },
   {
+    "nome": "Nova Ubiratã",
+    "uf": "MT",
+    "lat": -12.9834,
+    "lng": -55.2556
+  },
+  {
     "nome": "Nova Veneza",
     "uf": "SC",
     "lat": -28.6338,
     "lng": -49.5055
+  },
+  {
+    "nome": "Nova Xavantina",
+    "uf": "MT",
+    "lat": -14.6771,
+    "lng": -52.3502
   },
   {
     "nome": "Novo Barreiro",
@@ -4578,6 +5082,12 @@
     "lng": -52.8281
   },
   {
+    "nome": "Novo Horizonte do Norte",
+    "uf": "MT",
+    "lat": -11.4089,
+    "lng": -57.3488
+  },
+  {
     "nome": "Novo Horizonte do Sul",
     "uf": "MS",
     "lat": -22.6693,
@@ -4594,6 +5104,24 @@
     "uf": "RS",
     "lat": -27.5765,
     "lng": -54.5036
+  },
+  {
+    "nome": "Novo Mundo",
+    "uf": "MT",
+    "lat": -9.95616,
+    "lng": -55.2029
+  },
+  {
+    "nome": "Novo Santo Antônio",
+    "uf": "MT",
+    "lat": -12.2875,
+    "lng": -50.9686
+  },
+  {
+    "nome": "Novo São Joaquim",
+    "uf": "MT",
+    "lat": -14.9054,
+    "lng": -53.0194
   },
   {
     "nome": "Novo Tiradentes",
@@ -4812,10 +5340,22 @@
     "lng": -51.1909
   },
   {
+    "nome": "Paranaíta",
+    "uf": "MT",
+    "lat": -9.65835,
+    "lng": -56.4786
+  },
+  {
     "nome": "Paranapoema",
     "uf": "PR",
     "lat": -22.6412,
     "lng": -52.0905
+  },
+  {
+    "nome": "Paranatinga",
+    "uf": "MT",
+    "lat": -14.4265,
+    "lng": -54.0524
   },
   {
     "nome": "Paranavaí",
@@ -4920,6 +5460,12 @@
     "lng": -52.3431
   },
   {
+    "nome": "Pedra Preta",
+    "uf": "MT",
+    "lat": -16.6245,
+    "lng": -54.4722
+  },
+  {
     "nome": "Pedras Altas",
     "uf": "RS",
     "lat": -31.7365,
@@ -4942,6 +5488,12 @@
     "uf": "RS",
     "lat": -31.8642,
     "lng": -52.8184
+  },
+  {
+    "nome": "Peixoto de Azevedo",
+    "uf": "MT",
+    "lat": -10.2262,
+    "lng": -54.9794
   },
   {
     "nome": "Pejuçara",
@@ -5148,10 +5700,22 @@
     "lng": -52.867
   },
   {
+    "nome": "Planalto da Serra",
+    "uf": "MT",
+    "lat": -14.6518,
+    "lng": -54.7819
+  },
+  {
     "nome": "Poço das Antas",
     "uf": "RS",
     "lat": -29.4481,
     "lng": -51.6719
+  },
+  {
+    "nome": "Poconé",
+    "uf": "MT",
+    "lat": -16.266,
+    "lng": -56.6261
   },
   {
     "nome": "Pomerode",
@@ -5170,6 +5734,12 @@
     "uf": "MS",
     "lat": -22.5296,
     "lng": -55.7203
+  },
+  {
+    "nome": "Pontal do Araguaia",
+    "uf": "MT",
+    "lat": -15.9274,
+    "lng": -52.3273
   },
   {
     "nome": "Pontal do Paraná",
@@ -5196,6 +5766,12 @@
     "lng": -50.4659
   },
   {
+    "nome": "Ponte Branca",
+    "uf": "MT",
+    "lat": -16.7584,
+    "lng": -52.8369
+  },
+  {
     "nome": "Ponte Preta",
     "uf": "RS",
     "lat": -27.6587,
@@ -5206,6 +5782,12 @@
     "uf": "SC",
     "lat": -26.8733,
     "lng": -52.0112
+  },
+  {
+    "nome": "Pontes e Lacerda",
+    "uf": "MT",
+    "lat": -15.2219,
+    "lng": -59.3435
   },
   {
     "nome": "Porecatu",
@@ -5226,6 +5808,12 @@
     "lng": -51.2065
   },
   {
+    "nome": "Porto Alegre do Norte",
+    "uf": "MT",
+    "lat": -10.8761,
+    "lng": -51.6357
+  },
+  {
     "nome": "Porto Amazonas",
     "uf": "PR",
     "lat": -25.54,
@@ -5242,6 +5830,24 @@
     "uf": "SC",
     "lat": -27.1586,
     "lng": -48.5469
+  },
+  {
+    "nome": "Porto dos Gaúchos",
+    "uf": "MT",
+    "lat": -11.533,
+    "lng": -57.4132
+  },
+  {
+    "nome": "Porto Esperidião",
+    "uf": "MT",
+    "lat": -15.857,
+    "lng": -58.4619
+  },
+  {
+    "nome": "Porto Estrela",
+    "uf": "MT",
+    "lat": -15.3235,
+    "lng": -57.2204
   },
   {
     "nome": "Porto Lucena",
@@ -5304,6 +5910,12 @@
     "lng": -49.9301
   },
   {
+    "nome": "Poxoréu",
+    "uf": "MT",
+    "lat": -15.8299,
+    "lng": -54.4208
+  },
+  {
     "nome": "Prado Ferreira",
     "uf": "PR",
     "lat": -23.0357,
@@ -5350,6 +5962,12 @@
     "uf": "SC",
     "lat": -27.2768,
     "lng": -49.3889
+  },
+  {
+    "nome": "Primavera do Leste",
+    "uf": "MT",
+    "lat": -15.544,
+    "lng": -54.2811
   },
   {
     "nome": "Primeiro de Maio",
@@ -5428,6 +6046,12 @@
     "uf": "PR",
     "lat": -25.4492,
     "lng": -52.9102
+  },
+  {
+    "nome": "Querência",
+    "uf": "MT",
+    "lat": -12.6093,
+    "lng": -52.1821
   },
   {
     "nome": "Querência do Norte",
@@ -5526,6 +6150,12 @@
     "lng": -50.8466
   },
   {
+    "nome": "Reserva do Cabaçal",
+    "uf": "MT",
+    "lat": -15.0743,
+    "lng": -58.4585
+  },
+  {
     "nome": "Reserva do Iguaçu",
     "uf": "PR",
     "lat": -25.8319,
@@ -5544,6 +6174,12 @@
     "lng": -53.7588
   },
   {
+    "nome": "Ribeirão Cascalheira",
+    "uf": "MT",
+    "lat": -12.9367,
+    "lng": -51.8244
+  },
+  {
     "nome": "Ribeirão Claro",
     "uf": "PR",
     "lat": -23.1941,
@@ -5554,6 +6190,12 @@
     "uf": "PR",
     "lat": -23.4091,
     "lng": -50.3601
+  },
+  {
+    "nome": "Ribeirãozinho",
+    "uf": "MT",
+    "lat": -16.4856,
+    "lng": -52.6924
   },
   {
     "nome": "Rio Azul",
@@ -5572,6 +6214,12 @@
     "uf": "PR",
     "lat": -25.4874,
     "lng": -52.5292
+  },
+  {
+    "nome": "Rio Branco",
+    "uf": "MT",
+    "lat": -15.2483,
+    "lng": -58.1259
   },
   {
     "nome": "Rio Branco do Ivaí",
@@ -5754,10 +6402,22 @@
     "lng": -52.9081
   },
   {
+    "nome": "Rondolândia",
+    "uf": "MT",
+    "lat": -10.8376,
+    "lng": -61.4697
+  },
+  {
     "nome": "Rondon",
     "uf": "PR",
     "lat": -23.412,
     "lng": -52.7659
+  },
+  {
+    "nome": "Rondonópolis",
+    "uf": "MT",
+    "lat": -16.4673,
+    "lng": -54.6372
   },
   {
     "nome": "Roque Gonzales",
@@ -5776,6 +6436,12 @@
     "uf": "RS",
     "lat": -30.2515,
     "lng": -54.9221
+  },
+  {
+    "nome": "Rosário Oeste",
+    "uf": "MT",
+    "lat": -14.8259,
+    "lng": -56.4236
   },
   {
     "nome": "Sabáudia",
@@ -5812,6 +6478,12 @@
     "uf": "SC",
     "lat": -26.6049,
     "lng": -53.0578
+  },
+  {
+    "nome": "Salto do Céu",
+    "uf": "MT",
+    "lat": -15.1303,
+    "lng": -58.1317
   },
   {
     "nome": "Salto do Itararé",
@@ -5880,6 +6552,12 @@
     "lng": -53.251
   },
   {
+    "nome": "Santa Carmem",
+    "uf": "MT",
+    "lat": -11.9125,
+    "lng": -55.2263
+  },
+  {
     "nome": "Santa Cecília",
     "uf": "SC",
     "lat": -26.9592,
@@ -5914,6 +6592,12 @@
     "uf": "RS",
     "lat": -29.722,
     "lng": -52.4343
+  },
+  {
+    "nome": "Santa Cruz do Xingu",
+    "uf": "MT",
+    "lat": -10.1532,
+    "lng": -52.3953
   },
   {
     "nome": "Santa Fé",
@@ -6000,6 +6684,12 @@
     "lng": -52.8333
   },
   {
+    "nome": "Santa Rita do Trivelato",
+    "uf": "MT",
+    "lat": -13.8146,
+    "lng": -55.2706
+  },
+  {
     "nome": "Santa Rosa",
     "uf": "RS",
     "lat": -27.8702,
@@ -6034,6 +6724,12 @@
     "uf": "SC",
     "lat": -26.7813,
     "lng": -50.009
+  },
+  {
+    "nome": "Santa Terezinha",
+    "uf": "MT",
+    "lat": -10.4704,
+    "lng": -50.514
   },
   {
     "nome": "Santa Terezinha de Itaipu",
@@ -6078,6 +6774,12 @@
     "lng": -52.6799
   },
   {
+    "nome": "Santo Afonso",
+    "uf": "MT",
+    "lat": -14.4945,
+    "lng": -57.0091
+  },
+  {
     "nome": "Santo Amaro da Imperatriz",
     "uf": "SC",
     "lat": -27.6852,
@@ -6112,6 +6814,18 @@
     "uf": "PR",
     "lat": -22.7351,
     "lng": -52.344
+  },
+  {
+    "nome": "Santo Antônio do Leste",
+    "uf": "MT",
+    "lat": -14.805,
+    "lng": -53.6075
+  },
+  {
+    "nome": "Santo Antônio do Leverger",
+    "uf": "MT",
+    "lat": -15.8632,
+    "lng": -56.0788
   },
   {
     "nome": "Santo Antônio do Palma",
@@ -6214,6 +6928,12 @@
     "uf": "RS",
     "lat": -28.5312,
     "lng": -51.886
+  },
+  {
+    "nome": "São Félix do Araguaia",
+    "uf": "MT",
+    "lat": -11.615,
+    "lng": -50.6706
   },
   {
     "nome": "São Francisco de Assis",
@@ -6414,10 +7134,28 @@
     "lng": -51.5966
   },
   {
+    "nome": "São José do Povo",
+    "uf": "MT",
+    "lat": -16.4549,
+    "lng": -54.2487
+  },
+  {
+    "nome": "São José do Rio Claro",
+    "uf": "MT",
+    "lat": -13.4398,
+    "lng": -56.7218
+  },
+  {
     "nome": "São José do Sul",
     "uf": "RS",
     "lat": -29.5448,
     "lng": -51.4821
+  },
+  {
+    "nome": "São José do Xingu",
+    "uf": "MT",
+    "lat": -10.7982,
+    "lng": -52.7486
   },
   {
     "nome": "São José dos Ausentes",
@@ -6430,6 +7168,12 @@
     "uf": "PR",
     "lat": -25.5313,
     "lng": -49.2031
+  },
+  {
+    "nome": "São José dos Quatro Marcos",
+    "uf": "MT",
+    "lat": -15.6276,
+    "lng": -58.1772
   },
   {
     "nome": "São Leopoldo",
@@ -6534,6 +7278,12 @@
     "lng": -54.9404
   },
   {
+    "nome": "São Pedro da Cipa",
+    "uf": "MT",
+    "lat": -16.0109,
+    "lng": -54.9176
+  },
+  {
     "nome": "São Pedro da Serra",
     "uf": "RS",
     "lat": -29.4193,
@@ -6634,6 +7384,12 @@
     "uf": "RS",
     "lat": -29.6882,
     "lng": -54.6826
+  },
+  {
+    "nome": "Sapezal",
+    "uf": "MT",
+    "lat": -12.9892,
+    "lng": -58.7645
   },
   {
     "nome": "Sapiranga",
@@ -6756,6 +7512,12 @@
     "lng": -53.0409
   },
   {
+    "nome": "Serra Nova Dourada",
+    "uf": "MT",
+    "lat": -12.0896,
+    "lng": -51.4025
+  },
+  {
     "nome": "Serranópolis do Iguaçu",
     "uf": "PR",
     "lat": -25.3799,
@@ -6828,6 +7590,12 @@
     "lng": -52.5304
   },
   {
+    "nome": "Sinop",
+    "uf": "MT",
+    "lat": -11.8604,
+    "lng": -55.5091
+  },
+  {
     "nome": "Siqueira Campos",
     "uf": "PR",
     "lat": -23.6875,
@@ -6858,6 +7626,12 @@
     "lng": -54.7551
   },
   {
+    "nome": "Sorriso",
+    "uf": "MT",
+    "lat": -12.5425,
+    "lng": -55.7211
+  },
+  {
     "nome": "Sul Brasil",
     "uf": "SC",
     "lat": -26.7351,
@@ -6874,6 +7648,12 @@
     "uf": "RS",
     "lat": -29.643,
     "lng": -51.6823
+  },
+  {
+    "nome": "Tabaporã",
+    "uf": "MT",
+    "lat": -11.3007,
+    "lng": -56.8312
   },
   {
     "nome": "Tacuru",
@@ -6906,6 +7686,12 @@
     "lng": -51.2473
   },
   {
+    "nome": "Tangará da Serra",
+    "uf": "MT",
+    "lat": -14.6229,
+    "lng": -57.4933
+  },
+  {
     "nome": "Tapejara",
     "uf": "PR",
     "lat": -23.7315,
@@ -6934,6 +7720,12 @@
     "uf": "PR",
     "lat": -23.3193,
     "lng": -53.0684
+  },
+  {
+    "nome": "Tapurah",
+    "uf": "MT",
+    "lat": -12.695,
+    "lng": -56.5178
   },
   {
     "nome": "Taquara",
@@ -7002,6 +7794,12 @@
     "lng": -50.0644
   },
   {
+    "nome": "Terra Nova do Norte",
+    "uf": "MT",
+    "lat": -10.517,
+    "lng": -55.231
+  },
+  {
     "nome": "Terra Rica",
     "uf": "PR",
     "lat": -22.7111,
@@ -7012,6 +7810,12 @@
     "uf": "PR",
     "lat": -24.1575,
     "lng": -54.0988
+  },
+  {
+    "nome": "Tesouro",
+    "uf": "MT",
+    "lat": -16.0809,
+    "lng": -53.559
   },
   {
     "nome": "Teutônia",
@@ -7084,6 +7888,12 @@
     "uf": "PR",
     "lat": -23.7796,
     "lng": -49.9499
+  },
+  {
+    "nome": "Torixoréu",
+    "uf": "MT",
+    "lat": -16.2006,
+    "lng": -52.5571
   },
   {
     "nome": "Toropi",
@@ -7326,6 +8136,12 @@
     "lng": -52.8541
   },
   {
+    "nome": "União do Sul",
+    "uf": "MT",
+    "lat": -11.5308,
+    "lng": -54.3616
+  },
+  {
     "nome": "Uniflor",
     "uf": "PR",
     "lat": -23.0868,
@@ -7374,6 +8190,12 @@
     "lng": -50.9418
   },
   {
+    "nome": "Vale de São Domingos",
+    "uf": "MT",
+    "lat": -15.286,
+    "lng": -59.0683
+  },
+  {
     "nome": "Vale do Sol",
     "uf": "RS",
     "lat": -29.5967,
@@ -7416,6 +8238,12 @@
     "lng": -51.7402
   },
   {
+    "nome": "Várzea Grande",
+    "uf": "MT",
+    "lat": -15.6458,
+    "lng": -56.1322
+  },
+  {
     "nome": "Venâncio Aires",
     "uf": "RS",
     "lat": -29.6143,
@@ -7426,6 +8254,12 @@
     "uf": "PR",
     "lat": -24.2458,
     "lng": -50.2376
+  },
+  {
+    "nome": "Vera",
+    "uf": "MT",
+    "lat": -12.3017,
+    "lng": -55.3045
   },
   {
     "nome": "Vera Cruz",
@@ -7500,6 +8334,12 @@
     "lng": -51.1543
   },
   {
+    "nome": "Vila Bela da Santíssima Trindade",
+    "uf": "MT",
+    "lat": -15.0068,
+    "lng": -59.9504
+  },
+  {
     "nome": "Vila Flores",
     "uf": "RS",
     "lat": -28.8598,
@@ -7522,6 +8362,12 @@
     "uf": "RS",
     "lat": -30.3461,
     "lng": -53.876
+  },
+  {
+    "nome": "Vila Rica",
+    "uf": "MT",
+    "lat": -10.0137,
+    "lng": -51.1186
   },
   {
     "nome": "Virmond",
@@ -7618,5 +8464,11 @@
     "uf": "SC",
     "lat": -27.4521,
     "lng": -51.552
+  },
+  {
+    "nome": "Boa Esperança do Norte",
+    "uf": "MT",
+    "lat": -13.5067,
+    "lng": -55.1486
   }
 ]
